@@ -1,0 +1,8 @@
+User-Agent: *
+Disallow: /category-wise-blog-post/
+Disallow: /month-wise-post/
+Disallow: /signup
+Disallow: /login
+Disallow: /cart-detail
+
+Sitemap: https://www.expertbells.com/sitemap.xml

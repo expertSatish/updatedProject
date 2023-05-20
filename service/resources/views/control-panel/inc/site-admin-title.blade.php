@@ -1,0 +1,1 @@
+<a href="{{ url('/admin') }}" class="site_title"><i class="fa fa-paw"></i> <span><?php echo Helper::ProjectName();?></span></a>

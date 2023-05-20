@@ -1,0 +1,83 @@
+body>main{overflow:inherit!important}
+@media only screen and (min-width:992px){.Profile>.container>.row:last-child>div.col-lg-2:first-child{width:280px}
+.Profile>.container>.row:last-child>div.col-lg-10:last-child{width:calc(100% - 280px)}}
+@media only screen and (min-width:1400px){.Profile>.container>.row:last-child>div.col-lg-2:first-child{width:320px}
+.Profile>.container>.row:last-child>div.col-lg-10:last-child{width:calc(100% - 320px)}}
+.Profile>div>.row>div>.card,.LeftPanelSec .card{border-radius:0;padding:15px 25px;box-shadow:0 0 12px rgb(var(--blackrgb)/.2);border:none;background:#1e1e1e;border:1px solid rgb(var(--whitergb)/.05)!important}
+.Profile>div>.row>div>.card>div{padding:0;position:relative}
+.Profile>div>.row>div>.card .card{box-shadow:none;border-radius:0!important;padding:0}
+/*.Profile>div>.row>div>.card .card>div{padding:15px 25px}*/
+
+.cardbox{box-shadow:0 0 8px rgb(var(--blackrgb)/.1);border:none!important;padding:0!important;overflow:hidden}
+.prodebox .proimg{height:45px;width:45px;margin:0;overflow:hidden;border-radius:50%;box-shadow:0 0 8px rgb(var(--blackrgb)/.2)}
+.prodebox .proimg img{height:100%;width:100%;object-fit:contain}
+.prodebox p{font-size:13px;line-height:normal!important}
+.prodebox h5{overflow:hidden;font-family:'Montserrat', sans-serif!important;text-overflow:ellipsis;font-size:15px!important;white-space:nowrap}
+#AccMenuBar{font-size:13px;display:flex;align-items:center;justify-content:space-between;margin-top:15px;padding:10px 0 0;border-radius:0;border-top:1px solid rgb(var(--blackrgb)/.1)}
+button#AccMenuBar:focus:not(:focus-visible){box-shadow:none}
+
+.LeftPanelSec{position:sticky;top:75px}
+.LeftPanelSec .Leftpanel,.LeftPanelSec .links{padding:15px 20px!important;transition:all .5s}
+.Leftpanel .SubTitle{color:var(--white)}
+.Leftpanel ul{padding:0;margin:0}
+.Leftpanel ul li{border-bottom:1px solid rgb(var(--blackrgb)/.08)}
+.Leftpanel ul li a{display:flex;align-items:center;color:rgb(var(--whitergb)/.8);width:auto;position:relative;padding:9px 0;font-size:14px;line-height:20px;border-radius:8px;transition:all .5s}
+.Leftpanel ul li a i{height:30px;min-width:30px;font-size:15px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--thm);color:var(--white);transition:all .5s}
+.Leftpanel ul li:hover a{color:var(--thm)}
+.Leftpanel ul li:hover i{box-shadow:0 9px 15px rgb(var(--blackrgb)/.2);background:var(--white);color:var(--black)}
+.Leftpanel ul li.active,.Leftpanel ul li:last-child{border:none}
+.Leftpanel ul li.active a,.Leftpanel ul li:last-child a{background:var(--black);color:var(--white);box-shadow:0 9px 15px rgb(var(--blackrgb)/.2);margin-right:-9px;margin-left:-9px;padding:7px 9px}
+.Leftpanel ul li:last-child a{box-shadow:none;background:rgb(var(--blackrgb)/.2)}
+.Leftpanel ul li.active a i,.Leftpanel ul li:last-child a i{background:var(--white);color:var(--black);mix-blend-mode:screen}
+.Leftpanel:hover{box-shadow:0 3px 8px rgb(0 0 0/.2)}
+
+.price{font-weight:700}
+.card-body>.bg-light{background:#111!important}
+.accordion{background:none}
+.accordion-item{border-radius:0!important;border:1px solid rgb(var(--whitergb)/.09)!important;background:rgb(var(--blackrgb)/.1)!important;border-radius:0!important}
+.accordion-item>*{box-shadow:none!important;border-bottom:1px solid rgb(var(--whitergb)/.09)!important}
+.accordion-body{background:rgb(var(--whitergb)/.05)!important;border:none}
+
+
+.AccTabs{margin:0!important}
+.AccTabs>div{padding:22px;border-bottom:1px solid rgb(var(--whitergb)/.05);border-right:1px solid rgb(var(--whitergb)/.05)}
+.AccTabs>div .card{border:1px solid rgb(var(--blackrgb)/.09);background:rgb(var(--blackrgb)/.2)}
+.AccTabs>div .card-body{display:flex;justify-content:space-between;padding:20px}
+.AccTabs>div .card-body i:first-child{height:55px;width:55px;font-size:24px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--thm);color:var(--white);transition:all .5s}
+.AccTabs>div .card-body span{width:calc(100% - 99px)}
+.AccTabs>div .card-body p{line-height:normal!important}
+.AccTabs>div .card-body i:last-child{display:flex;align-items:center;color:var(--thm);font-size:22px}
+.AccTabs>div .card-body:hover i:first-child{box-shadow:0 9px 15px rgb(var(--blackrgb)/.2);background:var(--white);color:var(--black)}
+
+.orderbox,.orderlist{padding:0}
+.orderbox>div,.orderlist>div{border-top:1px solid rgb(var(--whitergb)/.05);padding:18px 22px;position:relative}
+.orderbox>div:last-child,.orderlist>div::last-child{border-bottom:1px solid rgb(var(--blackrgb)/.1)}
+.orderbox h3,.orderlist h3{font-size:15px;margin:0 0 8px}
+.orderbox p,.orderlist p{font-size:12px;margin:0;line-height:160%!important;color:rgb(var(--whitergb)/.9)!important}
+.orderbox p.text-white,.orderlist p.text-white{color:var(--white)!important}
+.orderbox .tag,.orderlist .tag{border-radius:3px;background:var(--thm);padding:4px 8px;font-size:11px;color:var(--white)}
+.orderbox .btn,.orderlist .btn{margin-top:0;font-size:12px;text-transform:none;line-height:25px;padding:0 15px}
+/*.orderbox .ProBlock,.orderbox .ProBlock:hover{padding-bottom:9px!important;margin-bottom:20px!important}*/
+
+
+.orderlist>div>.row>div>div>div:first-child{width:150px}
+.orderlist>div>.row>div>div>div:last-child{width:calc(100% - 150px)}
+.orderlist>div>.row img{border:1px solid rgb(var(--whitergb)/.1);padding:3px;height:80px;object-fit:contain}
+
+.MLeftpanel ul li a i,.MLeftpanel ul li:last-child a i{background:var(--thm1);color:var(--white);mix-blend-mode:inherit}
+.MLeftpanel ul li:hover a,.MLeftpanel ul li:last-child:hover a{color:var(--thm1)}
+.MLeftpanel ul li:hover i,.MLeftpanel ul li:last-child:hover i{background:var(--thm)}
+.MLeftpanel ul li.active a,.MLeftpanel ul li:last-child a{color:var(--white)}
+.MLeftpanel ul li:last-child a{box-shadow:none;background:none;color:rgb(var(--blackrgb)/.8)}
+.MLeftpanel ul li a>span{display:flex;justify-content:space-between;width:calc(100% - 35px);align-items:center}
+.MLeftpanel .Compose{padding-bottom:15px;border-bottom:1px solid rgb(var(--blackrgb)/.08)}
+
+.dt-bootstrap5>.row:first-child{display:none}
+.dt-bootstrap5>.row:last-child{align-items:center}
+.dt-bootstrap5>.row:last-child .dataTables_info{padding:0!important;font-size:13px}
+.DataTable{margin:0}
+
+@media only screen and (max-width:991px){.Profile .container,.PhotoBox,.Profile>.container>.row:last-child>div:first-child,.Profile>.container>.row:last-child>div:last-child{width:100%}
+.Profile>div>.row>div>.card>div .d-flex.edittextbox{flex-wrap:wrap}}
+@media only screen and (max-width:767px){}
+@media only screen and (max-width:575px){}

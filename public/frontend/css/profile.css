@@ -1,0 +1,82 @@
+/*.Profile .container{width:80%}*/
+
+.prolist{padding:0;margin-bottom:0;width:100%;font-size:15px;/*align-items:flex-start;display:flex;justify-content:flex-start;flex-wrap:wrap;*/}
+.prolist li,.prolist li>label{position:relative;padding:0;font-size:14px;display:flex;align-items:flex-start;justify-content:flex-start;color:#222;margin-bottom:9px}
+.prolist li i{width:32px;color:rgb(var(--blackrgb)/.5);display:flex;align-items:center;position:absolute;right:0;top:0;bottom:0;margin:auto}
+.EditText{font-size:15px;position:absolute!important;cursor:pointer;right:0;top:0;font-weight:600;border:none;background:none}
+.ProTopSec .card-body .EditText{top:0;right:0}
+.Prodetail .EditText{top:20px;right:20px;z-index:1}
+.Prodetail .EditText i{display:flex}
+.Prodetail .EditText i.fa-check{color:#198754!important}
+/*.ProTopSec .prolist li{align-items:center}*/
+
+.AllDetail>li>span:first-child,.AllDetail li>label>span:first-child{min-width:138px;color:#666;font-weight:600;justify-content:space-between;display:flex;align-items:baseline;margin-right:10px}
+/*.AllDetail li>label>span:first-child{min-width:150px}*/
+.AllDetail>li>span:first-child:after,.AllDetail li>label>span:first-child:after{content:':'}
+.AllDetail>li.d-block>span:first-child{justify-content:flex-start}
+.AllDetail>li.d-block>span:first-child:after{margin-left:5px}
+.AllDetail>li>span:empty:first-child:after{display:none}
+.AllDetail>li>span>span{width:15px}
+.AllDetail>li>span i{font-size:15px}
+.AllDetail>li .noeditt~.chosen-container .chosen-single,.AllDetail>li .noeditt~.chosen-container-multi .chosen-choices{border:none!important;padding-left:0!important;cursor:text!important}
+.AllDetail>li .noeditt~.chosen-container .chosen-single div b,.AllDetail>li .noeditt~.chosen-container-multi .chosen-choices li a{background:none!important}
+.AllDetail>li .noeditt~.chosen-container .chosen-drop,.AllDetail>li .noeditt~.chosen-container-multi .chosen-choices li:last-child:after,.edittextbox .inputtext[contenteditable="false"]~.ck-editor .ck-reset_all{display:none!important}
+.AllDetail>li .noeditt~.chosen-container-multi .chosen-choices li{box-shadow:none!important}
+.AllDetail>li .noeditt~.chosen-container-multi .chosen-choices li:after{content:','}
+.AllDetail>li .noeditt~.chosen-container-multi .chosen-choices li span{background:none!important;padding:3px 0!important;font-size:14px!important;color:var(--black)!important;cursor:text!important}
+.AllDetail>li>span ~ .inputtext,.AllDetail .inputtext{/*width:calc(100% - 170px)!important;*/min-width:15%!important;min-height:34px}
+.edittextbox .inputtext[contenteditable="false"]~.ck-editor .ck-content{border:none!important;padding:0!important;box-shadow:none!important}
+.edittextbox .inputtext[contenteditable="false"]~.ck-editor .ck-content p{margin:0!important}
+.AllDetail .inputtext{width:100%!important;border-radius:.25rem!important}
+.AllDetail .inputtext ~ .inputtext{margin-left:15px}
+.AllDetail .inputtext.flatpickr ~ .inputtext,.AllDetail .inputtext[type="text"] ~ .inputtext[type="number"]{margin-left:0}
+.AllDetail .inputtext.ConCode{max-width:50px!important;min-width:50px!important}
+.AllDetail .inputtext.flatpickr.inputtext[readonly="readonly"] ~ .inputtext.inputtext[readonly="readonly"]{background:none!important;font-size:14px}
+.inputtext[readonly="readonly"],.inputtext[readonly=""],select.inputtext,.inputtext[contenteditable="false"]{border:none;width:100%;resize:none;overflow:hidden;padding:2px 0}
+.inputtext[readonly="readonly"] ~ i,.inputtext[readonly=""] ~ i{display:none}
+.inputtext[type="password"][readonly="readonly"]{font-size:24px;min-height:2px!important;max-height:26px!important}
+select.inputtext.noeditt{pointer-events:none;border:none;width:100%;overflow:hidden;padding:2px 0;-moz-appearance:none;-webkit-appearance:none;appearance:none}
+.inputtext[contenteditable="true"],select.inputtext[contenteditable="true"]{border:1px solid #ddd;min-width:80%;padding:2px 5px}
+textarea.inputtext{width:100%;height:120px}
+
+.PhotoBox{font-size:13px;text-align:center}
+.PhotoBox label{display:block;margin-bottom:9px}
+.PhotoBox label>span{border-radius:50%;height:99px;width:99px;display:inline-block;border:1px solid rgb(var(--blackrgb)/.2);position:relative;padding:2px;overflow:hidden}
+.PhotoBox label>span:after{position:absolute;height:100%;width:100%;left:0;top:0;color:var(--thm1);display:flex;align-items:center;justify-content:center;font-size:33px;border-radius:50%;background:rgb(var(--whitergb)/.8);content:'\f030';font-family:"Font Awesome 5 Pro";opacity:0;visibility:hidden;transition:all .5s}
+.PhotoBox input[type=file] ~ span{cursor:pointer}
+.PhotoBox input[type=file] ~ span:hover:after{opacity:1;visibility:visible}
+.PhotoBox img{border-radius:50%}
+
+.form-check-input:disabled{overflow:inherit}
+.radiob,.checkb{display:inline-flex;flex-wrap:wrap;overflow:hidden}
+.radiob label,.checkb label{width:100%;margin:0;/*padding:9px!important;*/background:var(--white);font-size:14px;font-weight:500;transition:all .5s}
+.checkb .form-check-input{padding:0;min-width:1em!important;;width:auto!important;min-height:1em!important;border-radius:2px!important}
+.checkb .form-check-input.inputtext[readonly="readonly"]{border:1px solid rgb(var(--blackrgb)/.25)}
+.checkb .form-check-input:disabled{opacity:1!important;background-color:rgb(var(--blackrgb)/.08)}
+.checkb .form-check-input.inputtext[contenteditable="true"]{border-color:var(--thm)}
+.radiob label:after{height:100%;width:100%;z-index:-1}
+.radiob label:before{content:'';height:16px;min-width:16px;background-color:rgb(var(--blackrgb)/.08);border:1px solid rgb(var(--blackrgb)/.2);background-position:center;background-repeat:no-repeat;background-size:0!important;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%231b4d64' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 9l4 4l11-12'/%3e%3c/svg%3e");margin-right:5px;border-radius:2px;transition:all .3s}
+.radiob label i{margin-right:6px;font-size:18px;vertical-align:top;color:#d10908;transition:all .5s}
+.radiob .form-check:last-child label{border-right:none}
+.radiob input[type="radio"]:empty{display:none}
+.radiob input[type="radio"]:empty ~ label{position:relative;cursor:pointer;display:flex;font-size:13px;justify-content:start;align-items:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;padding:.3rem;height:2.13rem;width:100%}
+.radiob input[type="radio"]:empty ~ label:after{position:absolute;display:block;top:0;bottom:0;left:0;content:''}
+.radiob input[type="radio"]:disabled ~ label{border:none!important;padding-left:0}
+.radiob input[type="radio"]:checked ~ label{color:var(--white);z-index:1}
+.radiob input[type="radio"]:checked:disabled ~ label{color:var(--black)}
+.radiob input[type="radio"]:checked ~ label:before,.radiob input[type="radio"]:checked:disabled ~ label:before{background-color:rgb(var(--whitergb)/.4);background-size:100%!important;background-position:center;border:none;background-repeat:no-repeat;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19 19'%3e%3cpath fill='none' stroke='%231b4d64' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 9l4 4l11-12'/%3e%3c/svg%3e")}
+.radiob input[type="radio"]:checked:disabled ~ label:before{background-color:rgb(var(--blackrgb)/.08);border:1px solid rgb(var(--blackrgb)/.2)}
+.radiob input[type="radio"]:focus ~ label:after{box-shadow:0 0 0 3px #999}
+.checkb input[type="checkbox"]:empty ~ label{padding:0 1rem 1rem 0}
+.radiob .form-check,.checkb .form-check{min-width:20px;padding:0;margin:0;margin-right:8px}
+.radiob .form-check:last-child,.checkb .form-check:last-child{margin:0!important}
+.radiob .form-check input[type="radio"]:checked ~ label:after{color:var(--white);background-color:var(--thm)}
+.radiob .form-check input[type="radio"]:disabled ~ label:after{background-color:transparent}
+.radiob .form-check input[type="radio"]:checked ~ label i{color:var(--white)}
+
+.AddressSec ~ .AddressSec{border-top:1px solid rgb(var(--blackrgb)/.1);padding-top:9px}
+
+@media only screen and (max-width:991px){.Profile .container,.PhotoBox{width:100%}
+.Profile .card>div .d-flex.edittextbox{flex-wrap:wrap}}
+@media only screen and (max-width:767px){.Profile>.container>.row:last-child>div:first-child,.Profile>.container>.row:last-child>div:last-child{width:100%}}
+@media only screen and (max-width:467px){}

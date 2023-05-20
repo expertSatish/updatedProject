@@ -1,0 +1,150 @@
+main{overflow:inherit!important;}
+.MyAccount .breadcrumb-bg{background:none!important}
+.AccountPanel{display:flex;}
+.LeftPanel{overflow:hidden; position:sticky; top:60px}
+.LeftPanel, .RightBlock{background:#fff; box-shadow:0 0 9px rgb(0 0 0/.2); border-radius:5px; margin:0; overflow:hidden;}
+.LeftPanel li{border-bottom:1px solid #eee; display:flex; font-size:15px;}
+.LeftPanel li a{color:#333!important; line-height:44px!important; display:block!important; font-size:15px!important; padding:0 20px!important; width:100%; transition:all .5s}
+.LeftPanel li i{font-size:18px; margin-right:9px!important; color:#611f69; transition:all .5s}
+.LeftPanel li a:hover, .LeftPanel li a.active{background:#611f69; color:#fff!important}
+.LeftPanel li a:hover i, .LeftPanel li a.active i{color:#fdab00}
+.LeftPanel li:last-child{background:rgb(0 0 0/.1); border:none;}
+.LeftPanel li:last-child a:hover{background:rgb(0 0 0/.1); color:#000!important}
+.LeftPanel li:last-child a:hover i{color:#611f69}
+
+.RightBlock>.row{margin:0!important}
+.RightBlock>.row>.col{padding:0!important}
+.RightBlock .ListBlock{padding:18px 20px; border-bottom:1px solid #eee; border-right:1px solid #eee}
+.RightBlock .ListBlock .ListText{padding:20px 10px; background:#f8f8f8; border-radius:5px; border:1px solid #eee; display:flex; align-items:center; transition:all .5s;}
+.RightBlock .ListBlock .ListText i{font-size:36px; color:#fdab00; background:#fff; margin-right:9px; height:70px; width:70px; border-radius:50%; border:1px solid #eee; display:flex; justify-content:center; align-items:center;}
+.RightBlock .ListBlock .ListText h3{font-weight:600; color:#611f69; transition:all .5s;}
+.RightBlock .ListBlock .ListText span{font-size:13px}
+.RightBlock .ListBlock .ListText span a{color:#fdab00}
+.RightBlock .ListBlock .ListText:hover{background:#611f69; color:#fff}
+.RightBlock .ListBlock .ListText:hover h3{color:#fff}
+.RightBlock .ListBlock .input-field{margin:.5rem 0;}
+
+.RightBlock .input-field{width:100%;}
+.RightBlock .input-field label{-webkit-transform:translateY(11px) translateX(15px); transform:translateY(11px) translateX(15px); font-size:16px!important; height:auto;}
+.RightBlock .input-field label:not(.label-icon).active{transform:translateY(0) translateX(15px) scale(0.7)!important; color:#611f69!important}
+.RightBlock input:not([type]), .RightBlock input[type=text]:not(.browser-default), .RightBlock input[type=email]:not(.browser-default), .RightBlock input[type=password]:not(.browser-default), .RightBlock input[type=tel]:not(.browser-default), .RightBlock input[type=number]:not(.browser-default), .RightBlock input[type=file]:not(.browser-default), textarea.materialize-textarea{margin:0; border:1px solid #ddd!important; height:3rem; width:100%; border-radius:3px!important; padding:9px 15px 0!important; box-sizing:border-box;}
+.RightBlock .file-field .btn, .RightBlock .file-field .btn-large{height:3rem; line-height:3rem; border-radius:0 5px 5px 0;}
+.RightBlock .input-field .select-wrapper+label{transform:translateY(21px) translateX(15px) scale(0.8)!important; color:#0095d6!important}
+.RightBlock .select-wrapper::after{top:20px}
+.RightBlock .select-wrapper::before{top:5px}
+.input-field.row{display:flex; justify-content:center; align-items:center;}
+.radio-btn input[type="radio"]:disabled:empty ~ label{cursor:no-drop}
+.radio-btn{display:flex; width:100%!important; align-items:center;}
+.radio-btn label{width:100%; margin:0; border-radius:6px; padding:9px!important; font-size:13px; font-weight:500; transition:all .5s}
+.radio-btn label:before{background-color:#eee; height:100%; width:100%; z-index:-1}
+.radio-btn label i{margin-right:6px; font-size:18px; vertical-align:top; color:#611f69; transition:all .5s}
+.radio-btn input[type="radio"]:empty{display:none}
+.radio-btn input[type="radio"]:empty ~ label{position:relative; display:block; -webkit-transform:translateY(0px) translateX(0px); transform:translateY(0px) translateX(0px); cursor:pointer; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none}
+.radio-btn input[type="radio"]:empty ~ label:before{position:absolute; display:block; top:0; bottom:0; left:0; content:''; border-radius:5px;}
+.radio-btn input[type="radio"]:hover:not(:checked) ~ label{color:#888}
+.radio-btn input[type="radio"]:checked ~ label{color:#fff; z-index:2}
+.radio-btn input[type="radio"]:focus ~ label:before{box-shadow:0 0 0 3px #999}
+.radio-btn-main{min-width:90px; margin-left:9px}
+.radio-btn-main input[type="radio"]:checked ~ label:before{color:#fff; background-color:#611f69;}
+.radio-btn-main input[type="radio"]:checked ~ label i{color:#fff}
+.input-field.passw i{position:absolute; font-size:14px; color:#666}
+.input-field.passw label+i{right:15px; top:5px}
+
+.Acc-ProBlock .FProImg{height:80px; overflow:hidden;}
+.Acc-ProBlock .FProImg img{height:100%; width:100%; object-fit:cover;}
+.Acc-ProBlock h4 a{color:#000!important; font-weight:600; display:-webkit-box; overflow:hidden; -webkit-box-orient:vertical; -webkit-line-clamp:1;}
+.Acc-ProBlock .price{display:block; font-size:20px; margin-top:2px; color:#611f69; font-weight:900;}
+.Acc-ProBlock .odate{font-size:13px; color:#888}
+.Acc-ProBlock .btn{min-width:180px; margin-bottom:5px; line-height:32px; border-radius:5px}
+.Acc-ProBlock .btn::after{border-radius:3px}
+.Acc-ProBlock .btn:first-child, .Acc-ProBlock .btn.btn-main1{border-color:#f00!important; color:#f00!important}
+.Acc-ProBlock .btn:first-child::after, .Acc-ProBlock .btn.btn-main1::after{background:#f00!important}
+.Acc-ProBlock .btn:first-child:hover, .Acc-ProBlock .btn.btn-main1:hover, .Acc-ProBlock .btn:first-child:focus, .Acc-ProBlock .btn.btn-main1:focus{color:#fff!important}
+
+.MyAccountMenu{margin-bottom:20px}
+.MyAccountMenu>span{width:100%; display:flex; background:#eee; display:none; padding:9px 20px; border-radius:5px; border:1px solid #ddd;}
+.MyAccountMenu>span i{margin-right:9px}
+.MyAccountMenu>span+.LeftPanel{display:block; transform:scaleX(1) scaleY(1); position:static; opacity:1}
+
+.RightBlock .file-field input[type=text]:not(.browser-default){border:none!important;}
+.RightBlock .file-field input[type=file]{height:100%!important}
+.RightBlock .file-field .file-path-wrapper input[type="text"]{background:#eee}
+.RightBlock .file-field .file-path-wrapper{border:1px solid #ddd; background:#eee; height:150px; width:100%; border-radius:3px!important; transform:all .5s}
+.RightBlock .file-field .btn{background:none!important; display:flex; justify-content:center; align-items:center; border:none!important; position:absolute; left:0; top:0; width:100%; height:100%}
+.RightBlock .file-field .btn span{color:#666!important; font-size:18px}
+.RightBlock .file-field .btn span i{display:block; font-size:60px; color:#999; margin-bottom:8px}
+.RightBlock .file-field:hover .file-path-wrapper, .RightBlock .file-field:hover .file-path-wrapper input[type="text"]{background:#ddd}
+.RightBlock .Documents .Img{border:1px solid #ddd; position:relative; height:150px; overflow:hidden; border-radius:3px; padding:5px; margin-bottom:5px}
+.RightBlock .Documents .Img>span{position:absolute; top:0; right:0; overflow:hidden; height:25px; width:25px; background:red; color:#fff; justify-content:center; align-items:center; text-align:center; border-radius:0 0 0 5px;}
+.RightBlock .Documents .Img>span.plusicon{right:auto; left:0; border-radius:0 0 5px 0; background-color:#044d6e;}
+.RightBlock .Documents .Img>span a{color:#fff!important;}
+.RightBlock .Documents .Img>label{position:absolute; bottom:0; width:100%; left:0; z-index:2; color:#fff; text-align:center; padding:4px;}
+.RightBlock .Documents .Img>label.yellow{color:#000;}
+.RightBlock .Documents .Img img{height:100%; width:100%; object-fit:contain;}
+
+.myac{width:30%!important;;}
+
+.ViewBlock{border:none!important; box-shadow:none!important}
+.ViewBlock .ViewContent{border-bottom:1px solid #eee; padding:25px;}
+.ReviewForm input:not([type]), .ReviewForm input[type=text]:not(.browser-default), .ReviewForm input[type=email]:not(.browser-default), .ReviewForm textarea.materialize-textarea{border-radius:18px!important; border-color:#ddd; height:2.8rem!important; padding:8px 20px; background:#fafafa}
+.ReviewForm textarea.materialize-textarea{height:99px!important}
+.ReviewForm .input-field{margin:.7rem 0;}
+.ReviewForm .input-field label{transform:translateY(.8rem) translateX(1.5rem);}
+.ReviewForm .input-field label:not(.label-icon).active{-webkit-transform:translateX(.5rem) translateY(-14px) scale(0.88)!important; transform:translateX(.8rem) translateY(-14px) scale(0.88)!important; color:#044d6e!important}
+.ReviewForm button.btn{padding:0 30px}
+.rating{justify-content:center; margin-bottom:9px; overflow:hidden; flex-direction:row-reverse; float:left; position:relative;}
+.rating-0{filter:grayscale(100%);}
+.rating>input{display:none;}
+.rating>label{cursor:pointer; width:25px; height:25px; float:right; padding:0!important; margin-top:auto; background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e"); background-repeat:no-repeat; background-position:center; background-size:76%; transition:.3s;}
+.rating>input:checked~label, .rating>input:checked~label~label{background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");}
+.rating>input:not(:checked)~label:hover, .rating>input:not(:checked)~label:hover~label{background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");}
+.emoji-wrapper{width:auto; text-align:center; height:25px; overflow:hidden; position:relative;}
+.emoji-wrapper:before, .emoji-wrapper:after{content:""; display:none; height:15px; width:100%; position:absolute; left:0; z-index:1;}
+.emoji-wrapper:before{top:0; background:linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,0) 100%);}
+.emoji-wrapper:after{bottom:0; background:linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 35%,rgba(255,255,255,0) 100%);}
+.emoji{display:flex; margin-right:9px; flex-direction:column; align-items:center; transition:.3s;}
+.emoji>img{margin:0; width:25px; height:25px; flex-shrink:0;}
+#rating-1:checked~.emoji-wrapper>.emoji{transform:translateY(-25px);}
+#rating-2:checked~.emoji-wrapper>.emoji{transform:translateY(-50px);}
+#rating-3:checked~.emoji-wrapper>.emoji{transform:translateY(-75px);}
+#rating-4:checked~.emoji-wrapper>.emoji{transform:translateY(-100px);}
+#rating-5:checked~.emoji-wrapper>.emoji{transform:translateY(-125px);}
+.ReviewBlock>p:first-child{letter-spacing:1px}
+.ReviewBlock>p{letter-spacing:1px}
+
+ul.track{margin-top:30px; margin-bottom:60px; padding:0; list-style-type none;}
+ul.track li{display:inline-block; text-align:center; float:left; position:relative; padding-top:40px; line-height:18px; font-size:12px}
+ul.track li span{}
+ul.track li:last-child{float:none; text-align:right;}
+ul.track li:first-child{text-align:left;}
+ul.track[data-track-steps="2"] li{width:49%;}
+ul.track[data-track-steps="3"] li{width:33%;}
+ul.track[data-track-steps="4"] li{width:25%;}
+ul.track[data-track-steps="5"] li{width:19%;}
+ul.track[data-track-steps="6"] li{width:16%;}
+ul.track[data-track-steps="7"] li{width:14%;}
+ul.track[data-track-steps="8"] li{width:12%;}
+ul.track[data-track-steps="9"] li{width:11%;}
+ul.track li:after{content:""; color:#ccc; background:#ccc; width:100%; height:4px; top:13px; position:absolute; left:0;}
+ul.track li:first-child:before{left:0; right:auto;}
+ul.track li:last-child:before{left:auto; right:0;}
+ul.track li:before{content:""; color:#ccc; background:#ccc; bottom:0; top:0; left:0; right:0; margin:0 auto; text-align:center; position:absolute; height:30px; width:30px; line-height:30px; border-radius:50%; z-index:1}
+ul.track li.done{color:#000}
+ul.track li.done:after{background:#4CAF50; color:#000;}
+ul.track li.done:before{content:"\2713"; color:#fff; background:#4CAF50;}
+ul.track li:before{content:"\039F"; color:#ccc; background:#ccc; height:30px; width:30px; line-height:30px; border:none; border-radius:50%;}
+
+@media only screen and (max-width:1200px){}
+@media only screen and (max-width:992px){.AccountPanel{display:block;}
+.Acc-ProBlock .btn{min-width:150px; padding:0 15px;}
+.MyAccountMenu>span+.LeftPanel{display:flex; flex-wrap:wrap;}
+.LeftPanel li{width:50%!important; border-right:1px solid #eee}
+.LeftPanel li:last-child{width:100%!important}
+}
+@media only screen and (max-width:600px){.Acc-ProBlock .right-align{text-align:center; margin:5px 0 0;}
+.Acc-ProBlock .btn{min-width:50px}
+.MyAccountMenu>span{display:flex;}
+.MyAccountMenu>span+.LeftPanel{display:none; opacity:0}
+.LeftPanel li{width:100%!important; border-right:none}
+}
+@media only screen and (max-width:450px){.Acc-ProBlock .btn{padding:0 12px; border-width:1px; font-size:13px; line-height:28px}}

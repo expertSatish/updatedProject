@@ -1,0 +1,119 @@
+body>main{overflow:inherit!important;z-index:1;position:relative}
+.CartP{padding-top:9px!important}
+@media only screen and (min-width:991px){.CartP>div>.row>div:first-child{width:calc(100% - 350px)}
+.CartP>div>.row>div:last-child{width:350px}}
+@media only screen and (min-width:1200px){.CartP>div>.row>div:first-child{width:calc(100% - 380px)}
+.CartP>div>.row>div:last-child{width:380px}}
+
+.price a i{color:var(--white)}
+.price a:not(.collapsed) i:before{content:"\f056"}
+.cartbox.right .input-group-text{border-top-right-radius:.375rem!important;border-bottom-right-radius:.375rem!important;border-left:none!important}
+
+.cartbox{box-shadow:0 9px 15px -4px rgb(var(--blackrgb)/.1)!important;border-top:6px solid var(--thm)!important;border-radius:0!important;overflow:hidden;background:#1e1e1e!important;border:1px solid rgb(var(--whitergb)/.02)!important}
+.cartbox .catdtop{padding:15px 18px;font-weight:600}
+.cartbox .card-body{padding:0}
+.cartbox .card-body>div.itembox{border-top:1px solid rgb(var(--whitergb)/.08);padding:15px;position:relative}
+.cartbox .card-body>div:first-child{border:none!important}
+.cartbox .itembox a.delete{color:rgb(var(--blackrgb)/.6)}
+.cartbox .itembox a.delete:hover{color:#d10908}
+.cartbox .itembox a.delete span{font-size:12px}
+.CartMain .cartbox .itembox>div>div>div>div:first-child,.CartMain .cartbox .itembox>div>div:last-child{width:120px}
+.CartMain .cartbox .itembox>div>div>div>div:last-child{width:calc(100% - 120px)}
+.cartbox .itembox>div>div>div>div img{border:1px solid rgb(var(--whitergb)/.1);padding:3px;height:80px;object-fit:contain}
+.cartbox .card-body h3{font-size:13px;margin:0 0 5px;line-height:140%!important}
+.cartbox .card-body p{font-size:11px;margin:5px 0 0;line-height:120%!important;color:var(--white)!important}
+.cartbox .card-body .itembox .btn{font-size:10px;line-height:20px;margin-top:9px;padding:0 12px;min-width:50px}
+.cartbox .card-body .itembox .btn i{font-size:11px;margin-left:0}
+.cartbox .tag{border-radius:3px;background:var(--thm);padding:4px 8px;font-size:11px;color:var(--white)}
+.qut{display:flex;align-items:center;justify-content:space-between}
+.qut>div{display:flex;align-items:center}
+.qut .qut-box{display:flex;width:130px}
+.qut .qut-box button{width:30px;height:30px;border:none;background:rgb(var(--whitergb)/.06);color:rgb(var(--whitergb)/.5);border:1px solid rgb(var(--whitergb)/.06);border-radius:3px;font-size:16px;transition:all .5s}
+.qut .qut-box button:hover{background:var(--thm);color:var(--white)}
+.qut .qut-box input{border:none;width:35px;text-align:center;font-size:16px;/*border-top:1px solid rgb(var(--blackrgb)/.1);border-bottom:1px solid rgb(var(--blackrgb)/.1)*/background:none;color:var(--white)}
+.qut span{font-size:12px;line-height:normal}
+.cartbox .price{font-size:16px;line-height:normal;font-weight:700;color:rgb(var(--whitergb)/.9);display:inline-block;margin:0}
+.cartbox .price .CutP{font-size:13px;margin-top:2px}
+.cartbox .price>.cutprice{margin-left:5px}
+.cartbox .price>.cur{font-size:12px}
+.cartbox .price .CutP>.cur{font-size:9px!important}
+
+.cartbox .card-footer{padding:15px 18px;border-color:rgb(var(--whitergb)/.08)}
+.cartbox .card-footer .btn-thm1,.cartbox .card-footer .btn-thm3{font-size:14px;min-width:80px;line-height:28px;padding:0 15px}
+.cartbox .card-footer .btn-thm1 i,.cartbox .card-footer .btn-thm3 i{margin-left:0!important}
+.cartbox .card-footer .btn-thm1:after,.cartbox .card-footer .btn-thm3:after{display:none}
+.cartbox .card-footer .btn-thm1:hover{color:var(--thm)!important}
+.cartbox .card-footer .btn-thm3:hover{color:var(--thm1)!important}
+.cartbox .form-check img{height:20px;width:auto;margin-right:5px}
+.cartbox .form-check>label>span{font-size:16px;font-weight:500}
+.cartbox .form-check>label>span i{font-size:13px;font-weight:400}
+.cartbox .form-check>label>a{width:100%;display:block;color:var(--thm)!important;font-size:12px}
+.cartbox .form-check>label>a:hover{text-decoration:underline!important}
+
+.cartbox.right{position:sticky;top:65px;border-top:1px solid rgb(var(--blackrgb)/.06)!important}
+.cartbox.right .card-body .itembox>div{display:flex;justify-content:space-between;padding-bottom:5px;margin-bottom:5px}
+.cartbox.right .card-body .itembox>div>span>span,.cartbox.right .card-body .itembox>div>strong>span{font-size:13px}
+.cartbox.right .card-body .itembox>div:last-child{margin-bottom:0;padding-bottom:0;border-radius:0}
+.cartbox.right .card-body .itembox>div:last-child>*{border-radius:0!important}
+.cartbox.right .card-body .itembox>div:last-child input,.form-floating>.form-control{background-color:rgb(var(--whitergb)/.1)!important;border: 1px solid rgb(var(--whitergb)/.3)!important;color: var(--white)!important;border-radius:0!important}
+.cartbox.right .card-body .itembox>div:last-child button{margin:0;transform:translateY(0)!important}
+.cartbox.right .card-body .itembox>div:last-child label,.form-floating>label{color:rgb(var(--whitergb)/.4)!important;margin:0}
+.cartbox.right .card-body .itembox.total>div{font-size:18px}
+.cartbox.right .card-footer{transition:all .5s}
+
+.CartTopBar{margin:0 0 20px;padding:0;display:flex}
+.CartTopBar>li{width:100%;margin-right:9px;border:1px solid rgb(var(--blackrgb)/.06)!important;border-left:6px solid rgb(var(--blackrgb)/.3)!important;box-shadow:0 5px 9px rgb(var(--blackrgb)/.1)!important;border-radius:9px;font-size:13px;overflow:hidden}
+.CartTopBar>li:first-child{max-width:82px} 
+.CartTopBar>li:last-child{margin:0!important}
+.CartTopBar>li a{padding:7px 9px;display:flex;pointer-events:none;align-items:center;font-weight:600;height:100%;white-space:nowrap;position:relative;color:rgb(var(--whitergb)/.7);background:#111}
+.CartTopBar>li a i{font-size:22px;color:rgb(var(--whitergb)/.3)!important}
+.CartTopBar>li a span i{font-size:12px}
+.CartTopBar>li.active{border:none!important}
+.CartTopBar>li.active a{pointer-events:inherit;background:var(--white)!important;color:rgb(var(--blackrgb)/.7)}
+.CartTopBar>li.active a:hover{color:var(--black)}
+.CartTopBar>li.active i{color:var(--black)!important}
+.CartTopBar>li.active+li{border-left-color:var(--white)!important}
+.CartTopBar>li.active a span{position:absolute;height:17px;width:17px;left:11px;top:11px;display:grid;place-items:center;border-radius:50%;background:var(--white);opacity:0;transition:all .5s}
+.CartTopBar>li.active:hover a span{opacity:1}
+
+.BAddress+label+div{display:block}
+#BAddress:checked+label+div{display:none}
+
+.AddressBoxs .row{margin:0 -8px !important}
+.AddressBoxs .row>div{padding:0 8px !important}
+.form-check .card{border-radius:0;border-color:rgb(var(--whitergb)/.08);background:rgb(var(--whitergb)/.08)}
+.AddressBox .form-check-input:checked+.form-check-label .card{border-color:var(--thm);box-shadow:0 0 0 .25rem rgb(var(--thmrgb)/.2)}
+.AddressBoxs .card h3{font-size:14px!important}
+.AddressBoxs .card p{font-size:13px!important;line-height:160%!important}
+.AddressBoxs .form-check>label{width:100% !important;cursor:pointer}
+.btn-sm{min-width:30px!important;height:30px;display:grid!important;place-items:center}
+
+.form-check-input[type=checkbox]{font-size:15px;background:rgb(var(--whitergb)/.1)!important;border:1px solid rgb(var(--whitergb)/.05)!important;margin-top:2px!important}
+.form-check-input[type=checkbox]:after{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 9l4 4l11-12'/%3e%3c/svg%3e")!important}
+
+@media only screen and (min-width:1200px){.CartMain .cartbox .itembox>div>div{width:calc(50% - 60px)}}
+@media only screen and (max-width:1200px){.cartbox .catdtop{display:none}
+.cartbox .card-body>div.itembox>div.row{align-items:flex-start!important}
+.cartbox .card-body .row .row{margin-top:9px}
+.cartbox.right .card-footer .Promocode{margin-right:9px}
+.cartbox .itembox a.delete{top:0;border-radius:0 0 0 9px;position:absolute;right:0;font-size:13px;display:inline-block;padding:5px 9px;color:var(--white)!important;background:#d10908}
+.cartbox .itembox a.delete span{display:none}
+.cartbox .itembox a.delete:hover{color:var(--white)}}
+@media only screen and (max-width:992px){.cartbox.right .card-footer{position:fixed;right:0;border-radius:0px;display:flex;justify-content:space-between;padding:9px 15px;width:100%;z-index:4;bottom:0}
+.cartbox.right .card-footer .btn{width:49%!important;margin:0}}
+@media only screen and (max-width:767px){.cartbox.right .card-footer .btn{padding:0 15px;line-height:35px}
+.CartTopBar{flex-wrap:wrap;justify-content:space-between}
+.CartTopBar>li{max-width:49%!important;margin:0 0 5px}
+.CartTopBar>li a{white-space:inherit;line-height:normal}
+nav.navbar.menu>div.is-fixed .LastH ul{width:130px!important;overflow:hidden;padding:12px!important}
+.cartbox.right .card-footer{width:calc(100% - 130px)!important;box-shadow:0 -9px 12px rgb(var(--blackrgb)/.2)}}
+@media only screen and (max-width:575px){nav .LastH ul img,nav .LastH ul button img,.logom button img{height:25px}
+.cartbox.right .card-footer .btn{text-transform:none;padding:5px 18px;font-size:15px!important;line-height:34px}
+nav.navbar.menu>div.is-fixed .LastH ul{width:55px!important;overflow:hidden;padding:8px 12px!important}
+.cartbox.right .card-footer{width:calc(100% - 55px)!important}}
+@media only screen and (max-width:450px){.cartbox.right .card-footer .input-group-text,.cartbox.right .card-footer .form-control{padding:.375rem .5rem}
+.cartbox.right .card-footer{padding:12px 9px;justify-content:space-around}
+.cartbox.right .card-footer .btn{font-size:14px!important;width:auto!important;line-height:28px}
+/*.cartbox.right .card-footer .btn span{display:none}*/
+.cartbox .pricebox .dropdown>div.show:after{display:none}}
+@media only screen and (max-width:350px){.cartbox.right .card-footer .btn{padding:5px 12px}}

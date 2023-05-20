@@ -1,0 +1,1 @@
+<div class="col-md-4 text-end"><p>Available Wallet: <strong>&#8377; {{userinfo()->wallet}}</strong></p></div>
