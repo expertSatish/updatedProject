@@ -8,7 +8,7 @@ foreach($expertise as $ex){
 }
 Auth::routes();
 
-
+//Route start
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/{expertcategory}/{subcat?}', App\Http\Controllers\CategoryController::class)->name('expertcategory')->where('expertcategory',$Arrht);
 Route::get('/become-an-expert', [App\Http\Controllers\HomeController::class, 'becomeanexpert'])->name('becomeanexpert');
