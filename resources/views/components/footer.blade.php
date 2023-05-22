@@ -13,7 +13,7 @@
                             <h3 class="h5">Important Links</h3>
                             <ul class="links">
                                 <li><a href="{{route('experts')}}">Find a Mentor</a></li>
-                                <li><a href="{{route('becomeanexpert')}}">Become as a Mentor</a></li>
+                                <li><a href="{{route('becomeanexpert')}}">Become a Mentor</a></li>
                                 <li><a href="{{route('about')}}">About Us</a></li>
                                 <li><a href="{{route('blog')}}">Blog</a></li>
                             </ul>

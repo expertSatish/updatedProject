@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Models\Expert;
 use Illuminate\Http\Request;
 use LoveyCom\CashFree\PaymentGateway\Order;
 
@@ -576,15 +577,16 @@ class UserController extends Controller
     public function videocallend(Request $r){
         $slot = \App\Models\SlotBook::where('call_meeting_code',$r->meeting)->first();
         $gstamount = $slot->gst_amount;
-        $tdsamount = ($slot->paid_amount * settingdata()->tds) / 100;
-        $transfer = $slot->paid_amount - $gstamount - $tdsamount - $slot->service_charges;
+        $tdsAmount = Expert::where('id',$slot->expert_id)->first();
+        $tdsamount = ($slot->booking_amount * $tdsAmount->tds) / 100;
+        $transfer = $slot->booking_amount  - $tdsamount - $slot->service_charges;
         
         $data = \App\Models\SlotBook::where('call_meeting_code',$r->meeting)->update([
             'call_end_by' => userinfo()->id,
             'call_end_by_type' => 2,
             'status' => 3,
             'call_end' => date('Y-m-d H:i:s'),
-            'tds' => settingdata()->tds,
+            'tds' => $tdsAmount->tds,
             'tds_amount' => $tdsamount,
             'transfer_amount' => $transfer,
             'transfer_date' => date('Y-m-d H:i:s')

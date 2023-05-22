@@ -17,7 +17,6 @@
 @stack('css')
 <x-seo-common/>
 <link rel="stylesheet" href="{{asset('frontend/css/main-style.css')}}">
-
 <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
 <link rel="dns-prefetch" href="https://fonts.googleapis.com">
 <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>

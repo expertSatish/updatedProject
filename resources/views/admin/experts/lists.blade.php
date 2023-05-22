@@ -249,10 +249,17 @@
                                                                         data-toggle="modal"><i
                                                                             class="fa fa-calculator"></i>
                                                                         Service Charges</a></li>
-                                                                        <li><a
-                                                                        href="{{ route('admin.experts.slots', ['page' => 'slots','id' => $list->id]) }}"><i
-                                                                            class="fa fa-pencil"></i> Manage Slots</a>
-                                                                </li>
+                                                                <li><a href="#manageTds"
+                                                                        data-bs-expert="{{ $list->id }}"
+                                                                        data-bs-charges="{{ $list->service_charges }}"
+                                                                        data-toggle="modal"><i
+                                                                            class="fa fa-calculator"></i>
+                                                                        Manage TDS</a></li>
+                                                                <li><a href="#couponCode"
+                                                                        data-bs-expert="{{ $list->id }}"
+                                                                        data-toggle="modal"><i
+                                                                            class="fa fa-calculator"></i>
+                                                                        Coupon Code</a></li>
                                                                 <li><a href="{{ route('admin.experts.remove', ['id' => $list->id]) }}"
                                                                         class="text-danger"
                                                                         onclick="return RemoveRecord()"><i
@@ -367,6 +374,27 @@
                     <small class="servicemdltl">Please enter your service charges (IN PERCENTAGE %) for this expert</small>
                     <input type="text" name="service_charges" required id="servicecharges" class="form-control"
                         placeholder="Enter Service Charges">
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button class="btn btn-dark">Update</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="manageTds" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <form method="POST" action="{{ route('admin.experts.expertTdsharges') }}"
+                class="modal-content bd-0 tx-14">
+                @csrf
+                <input type="hidden" name="expertid">
+                <div class="modal-header justify-content-center">
+                    <h5 class="tx-gray-800 mb-0 tx-uppercase tx-semibold tx-13">TDS</h5>
+                </div>
+                <div class="modal-body">
+                    <small class="servicemdltl">Please enter TDS (IN PERCENTAGE %) for this expert</small>
+                    <input type="text" name="tds" required id="servicecharges" class="form-control"
+                        placeholder="Enter TDS">
                 </div>
                 <div class="modal-footer justify-content-center">
                     <button class="btn btn-dark">Update</button>

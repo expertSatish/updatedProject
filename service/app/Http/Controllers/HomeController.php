@@ -229,7 +229,6 @@ class HomeController extends Controller{
 
         $meta = DB::table('page_section')->where('id', 46)->first();
         $data = DB::table('cms_pages')->where('id', 30)->first();
-
         return view('contact-us')->with(['meta' => $meta, 'data' => $data]);
     }
 

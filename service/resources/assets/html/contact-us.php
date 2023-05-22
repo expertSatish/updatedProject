@@ -88,8 +88,8 @@ $active='Contact Us';
                     <div class="ContactInfo">
                         <h4 class="h5 mt0 white-text">Expert Bells Branches</h4>
                         <ul class="con-info">
+                        <li><i class="icofont-map-pins"></i>Sector 142, Nukleus Building, Noida , Uttar Pradesh, 201305.</li>
                             <li><i class="icofont-map-pins"></i>6b Chanakya Puri, MG Road-2, Shahganj , Agra Uttar Pradesh, 282010.</li>
-                            <li><i class="icofont-map-pins"></i> 369 Model Town, Vinoba Bihar, Jaipur, Rajasthan, 302017</li>
                             <!-- <li><i class="icofont-envelope"></i> <a href="mailto:contact@falconaviation.in">contact@falconaviation.in</a></li>
                             <li><i class="icofont-web"></i> <a href="http://www.falconaviation.in">www.falconaviation.in</a></li> -->
                         </ul>

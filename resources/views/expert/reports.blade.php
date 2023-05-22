@@ -68,12 +68,11 @@
                                                 @if($item->payment==3)<small class="text-primary"><i class="fad fa-circle" style="font-size: 10px;"></i> Paid By Wallet</small>@endif
                                             </td>
                                             <td class="text-end">
-                                                <strong class="text-success"><i class="Ricon">&#8377;</i> {{$item->paid_amount}}/-</strong>
+                                                <strong class="text-success"><i class="Ricon">&#8377;</i> {{$item->booking_amount}}/-</strong>
                                             </td>
                                             @if($item->transfer_amount > 0)
                                             <td class="text-end">
                                                 @if($item->service_charges > 0) <small><b>Service Charges ({{$item->service_charges_percentage}}%):</b> <i class="Ricon">&#8377;</i> {{$item->service_charges}}</small><br> @endif
-                                                @if($item->gst > 0) <small><b>GST ({{$item->gst}}%):</b> <i class="Ricon">&#8377;</i> {{$item->gst_amount}}</small><br> @endif
                                                 @if($item->tds > 0) <small><b>TDS ({{$item->tds}}%):</b> <i class="Ricon">&#8377;</i> {{$item->tds_amount}}</small> @endif
                                             </td>
                                             <td class="text-end"><strong class="text-success"><i class="Ricon">&#8377;</i> {{$item->transfer_amount ?? 0}}/-</strong></td>

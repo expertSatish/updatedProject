@@ -138,6 +138,13 @@ class ExpertController extends Controller
         $data->save();
         return back()->with('success', 'Service Charges Updated!');
     }
+    public function expertTdsharges(Request $request)
+    {
+        $data = \App\Models\Expert::find($request->expertid);
+        $data->tds = $request->tds;
+        $data->save();
+        return back()->with('success', 'TDS Updated!');
+    }
         public function coupon_code(Request $request)
         {
             $data = \App\Models\Expert::find($request->expertid);

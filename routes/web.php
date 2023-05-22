@@ -8,7 +8,7 @@ foreach($expertise as $ex){
 }
 Auth::routes();
 
-//Route start  sss
+
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/{expertcategory}/{subcat?}', App\Http\Controllers\CategoryController::class)->name('expertcategory')->where('expertcategory',$Arrht);
 Route::get('/become-an-expert', [App\Http\Controllers\HomeController::class, 'becomeanexpert'])->name('becomeanexpert');
@@ -209,9 +209,6 @@ Route::middleware('expert')->name('expert.')->prefix('expert')->group(function()
         Route::post('dashboardgraf','dashboardgraf')->name('dashboardgraf');
 
     });
-
-    //updatee
-    
     Route::controller(App\Http\Controllers\Expert\HomeController::class)->group(function(){
         Route::get('dashboard','dashboard')->name('dashboard');
 
@@ -414,6 +411,7 @@ Route::namespace('Admin')->name('admin.')->prefix('control-panel')->group(functi
         Route::post('/experts-sequence',[App\Http\Controllers\Admin\ExpertController::class, 'sequence'])->name('experts.sequence');
         Route::post('/experts-bulkremove',[App\Http\Controllers\Admin\ExpertController::class, 'bulkremove'])->name('experts.bulkremove');
         Route::post('/expert-service-charges',[App\Http\Controllers\Admin\ExpertController::class, 'service_charges'])->name('experts.expertservicecharges');
+        Route::post('/expert-tds',[App\Http\Controllers\Admin\ExpertController::class, 'expertTdsharges'])->name('experts.expertTdsharges');
         Route::post('/expert-coupon-code',[App\Http\Controllers\Admin\ExpertController::class, 'coupon_code'])->name('experts.couponCode');
         Route::get('/experts-information/{page}/{id}',[App\Http\Controllers\Admin\ExpertController::class, 'information'])->name('experts.information');
         Route::get('/experts-remove/{id}',[App\Http\Controllers\Admin\ExpertController::class, 'destroy'])->name('experts.remove');
@@ -424,9 +422,7 @@ Route::namespace('Admin')->name('admin.')->prefix('control-panel')->group(functi
         
 
 
-        Route::get('/users',[App\Http\Controllers\Admin\UserControlExpertControllerler::class, 'index'])->name('users');
-        Route::get('/manage-slots/{page}/{id}',[App\Http\Controllers\Admin\ExpertController::class, 'information'])->name('experts.slots');
-        Route::get('/copyfornextweek/{id}',[App\Http\Controllers\Admin\ExpertController::class, 'copyfornextweek'])->name('copyfornextweek');
+        Route::get('/users',[App\Http\Controllers\Admin\UserController::class, 'index'])->name('users');
         Route::post('/users-save',[App\Http\Controllers\Admin\UserController::class, 'store'])->name('users.save');
         Route::post('/users-update',[App\Http\Controllers\Admin\UserController::class, 'update'])->name('users.update');
         Route::get('/users-edit/{id}',[App\Http\Controllers\Admin\UserController::class, 'edit'])->name('users.edit');
