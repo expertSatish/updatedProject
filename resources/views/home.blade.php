@@ -370,74 +370,14 @@
     <section class="AreMentor Home">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-7 wow slideIn">
+                <div class="col-sm-8 wow slideIn">
                     <h2 class="h1 thm">{{ TwoColor($expertcategorycms->title)[0] ?? '' }} <span
                             class="thm4">{{ TwoColor($expertcategorycms->title)[1] ?? '' }}</span></h2>
                     {!! $expertcategorycms->description !!}
                     <div class="text-center text-md-start"><a href="{{ route('becomeanexpert') }}" class="btn btn-thm4 btn-lg mt-4 mb-4">Become a Mentor</a></div>
                 </div>
-                <div class="col-12 col-lg-5 d-sm-flex d-none wow slideIn">
-                    <div class="row">
-                        <div class="col-6 ExpertBox UpExp">
-                            <div class="DivBox">
-                                @foreach ($expertcategories as $item)
-                                    @if($loop->iteration % 2 == 0)
-                                    <x-image-box>
-                                        <x-slot:image>{{ $item->image }}</x-slot>
-                                            <x-slot:path>/uploads/homecategory/</x-slot>
-                                                <x-slot:alt>{{ $item->title ?? '' }}</x-slot>
-                                                    <x-slot:width>600</x-slot>
-                                                        <x-slot:height>650</x-slot>
-                                                            <x-slot:class>mimg</x-slot>
-                                    </x-image-box>
-                                    @endif
-                                @endforeach
-                            </div> 
-                            <div class="DivBox">
-                                @foreach ($expertcategories as $item)
-                                    @if($loop->iteration % 2 == 0)
-                                    <x-image-box>
-                                        <x-slot:image>{{ $item->image }}</x-slot>
-                                            <x-slot:path>/uploads/homecategory/</x-slot>
-                                                <x-slot:alt>{{ $item->title ?? '' }}</x-slot>
-                                                    <x-slot:width>600</x-slot>
-                                                        <x-slot:height>650</x-slot>
-                                                            <x-slot:class>mimg</x-slot>
-                                    </x-image-box>
-                                    @endif
-                                @endforeach
-                            </div>                             
-                        </div>
-                        <div class="col-6 ExpertBox DownExp">
-                            <div class="DivBox">
-                                @foreach ($expertcategories as $ditem)
-                                @if($loop->iteration % 2 != 0)
-                                    <x-image-box>
-                                        <x-slot:image>{{ $ditem->image }}</x-slot>
-                                            <x-slot:path>/uploads/homecategory/</x-slot>
-                                                <x-slot:alt>{{ $ditem->title ?? '' }}</x-slot>
-                                                    <x-slot:width>600</x-slot>
-                                                        <x-slot:height>650</x-slot>
-                                                            <x-slot:class>mimg</x-slot>
-                                    </x-image-box>
-                                    @endif
-                                @endforeach
-                            </div>
-                            <div class="DivBox">
-                                @foreach ($expertcategories as $ditem)
-                                @if($loop->iteration % 2 != 0)
-                                    <x-image-box>
-                                        <x-slot:image>{{ $ditem->image }}</x-slot>
-                                            <x-slot:path>/uploads/homecategory/</x-slot>
-                                                <x-slot:alt>{{ $ditem->title ?? '' }}</x-slot>
-                                                    <x-slot:width>600</x-slot>
-                                                        <x-slot:height>650</x-slot>
-                                                            <x-slot:class>mimg</x-slot>
-                                    </x-image-box>
-                                    @endif
-                                @endforeach
-                            </div>
-                        </div>
+                <div class="col-sm-4  wow slideIn">
+                            <img style="width: 400px;" src="{{asset('frontend/image/Lesson-amico.png')}}">   
                     </div>
                 </div>
             </div>
