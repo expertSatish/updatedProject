@@ -8,6 +8,8 @@ use Firebase\JWT\JWT;
 use DateTime;
 use App\Models\ExpertVideo;
 use App\Models\SlotBook;
+use Carbon\Carbon;
+
 class HomeController extends Controller{    
 
     public function index(){
@@ -317,6 +319,18 @@ public function applyCoupon(Request $request)
         $fees = 0;
         $expert = \App\Models\Expert::find($expert);
         $availabiledays = \App\Models\SlotAvailability::where(['expert_id'=>$expert->id])->get();
+        $availabiledate = \App\Models\SlotAvailability::where('expert_id',$expert->id)->where('date','>=',date('Y-m-d'))->first();
+        if($availabiledate){
+            $date = Carbon::parse($availabiledate->date)->format('Y-m-d');
+            $true = '<div class="col-12 text-center my-5 text-success">
+            <h6>'.$expert->name.' is  available on '.$date.'.</h6>
+        </div>';
+        }
+        else{
+            $true =  $true = '<div class="col-12 text-center my-5 text-danger">
+            <h6>'.$expert->name.' is not avaibale.</h6>
+        </div>';
+        }
         $availability = \App\Models\SlotAvailability::where(['expert_id'=>$expert->id,'date'=>date('Y-m-d',strtotime($r->date))]);
         if($r->date==date('Y-m-d')){
             $availability = $availability->where('to_time','>=',date('H:i:s'));
@@ -362,10 +376,8 @@ public function applyCoupon(Request $request)
                 $Html .='</ul>';        
             } 
         }
-        if($availability->count()==0){
-            $Html .='<div class="col-12 text-center my-5 text-danger">
-                        <h6>'.$expert->name.' is not available for '.date('l d M, Y',strtotime($r->date ?? date('Y-m-d'))).'.</h6>
-                    </div>';
+        elseif($availability->count()==0){
+            $Html .= $true;
         } 
         $daysArr = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']; 
         $availdays = [];
