@@ -23,7 +23,6 @@
                             <div>
                                 <h3 class="m-0 h4">Availability Slots</h3>
                             </div>
-                           
                         </div>
                         <div class="card UserBox p-0 EditSlots ">
                             @php

@@ -29,11 +29,11 @@ right mentor and consultant for your startups and entrepreneurs. Start your jour
     border-radius: 25px;
 }
 .shadow-lg{
-    border-radius:25px;
+    border-radius:15px;
 }
 
 .card.card-just-text .content {
-    padding: 50px 16px;
+    padding: 18px 16px;
     text-align: center;
 }
 .card .content {
@@ -41,7 +41,7 @@ right mentor and consultant for your startups and entrepreneurs. Start your jour
 }
 
 .card[data-color="blue"] .category {
-    color: #7a9e9f;
+    color: #0C233B;
 }
 
 .card .category,
@@ -286,7 +286,7 @@ right mentor and consultant for your startups and entrepreneurs. Start your jour
         <div class="container">
             <div class="row wow slideInDown">
                 <div class="col-12 mb-4">
-                    <h2 class="h1 thm">{{ $findexpertcategorycms->title }}</h2>
+                    <h2 class="h1 thm" style=" text-transform: capitalize;">{{ $findexpertcategorycms->title }}</h2>
                     <div class="d-none d-md-block">{!! $findexpertcategorycms->description !!}</div>
                 </div>
             </div>
@@ -299,58 +299,22 @@ right mentor and consultant for your startups and entrepreneurs. Start your jour
                             @endforeach
                         @endforeach
                     </ul> -->
+                    @foreach ($findexpertcategories as $item)
                     <div class="col-md-3 col-sm-6 content-card">
                         <div class="shadow-lg">
                             <div class="card card-just-text" data-background="color" data-color="blue"
                                 data-radius="none">
                                 <div class="content">
-                                    <h6 class="category">Sales & Marketing</h6>
-                                    <span class="description">Having problem in marketing ? Don’t worry book a session with Top Marketing leads and get problem solved.
+                                    <h6 class="category"><strong>{{ $item->title ?? '' }}</strong></h6>
+                                    <span class="description">{{$item->short}}
                                     </span>
-                                    <h6 style="margin-top: 20px;" class="category">Explore</h6>
+                                    <a style="color:#326CFA" href="{{route('expertcategory',$item->alias)}}" class="rounded-3 d-block p-2">Explore</a>
+                                    
                                 </div>
                             </div> <!-- end card -->
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 content-card">
-                        <div class="shadow-lg">
-                            <div class="card card-just-text" data-background="color" data-color="blue"
-                                data-radius="none">
-                                <div class="content">
-                                    <h6 class="category">Funding</h6>
-                                    <span class="description">Having a problem with Fundraising? Don’t worry book a session with Top Fundraising Mentors leads and get the problem solved.
-                                    </span>
-                                    <h6 style="margin-top: 20px;" class="category">Explore</h6>
-                                </div>
-                            </div> <!-- end card -->
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 content-card">
-                        <div class="shadow-lg">
-                            <div class="card card-just-text" data-background="color" data-color="blue"
-                                data-radius="none">
-                                <div class="content">
-                                    <h6 class="category">Growth & Strategy</h6>
-                                    <span class="description">Need Growth Strategy for your startup? Book a session with Top Growth Strategist Mentors and get the Growth in your startup.
-                                    </span>
-                                    <h6 style="margin-top: 20px;" class="category">Explore</h6>
-                                </div>
-                            </div> <!-- end card -->
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 content-card">
-                        <div class="shadow-lg">
-                            <div class="card card-just-text" data-background="color" data-color="blue"
-                                data-radius="none">
-                                <div class="content">
-                                    <h6 class="category">Technology</h6>
-                                    <span class="description">Having a problem understanding the Tech part? Don’t worry book a session with Top Tech Mentors and get the problem solved.
-                                    </span>
-                                    <h6 style="margin-top: 20px;" class="category">Explore</h6>
-                                </div>
-                            </div> <!-- end card -->
-                        </div>
-                    </div>
+                    @endforeach
                 @foreach ($findexpertcategories as $item)
                 <div class="col-lg-3 col-sm-6 mb-md-4 mb-2 d-none">
                     <div class="card mx-lg-4 text-center">
@@ -482,7 +446,7 @@ right mentor and consultant for your startups and entrepreneurs. Start your jour
                             class="btn btn-thm4 btn-lg mt-4 mb-4">Become a Mentor</a></div>
                 </div>
                 <div class="col-sm-5  wow slideIn">
-                    <img style="width: 500px;" src="{{asset('frontend/image/Lesson-amico.png')}}">
+                    <img style="width: 100%;" src="{{asset('frontend/image/Lesson-amico.png')}}">
                 </div>
             </div>
         </div>
